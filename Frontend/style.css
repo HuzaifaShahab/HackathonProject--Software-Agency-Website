@@ -5,32 +5,43 @@ body, html{
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #03001e, #7303c0, #ec38bc, #fdeff9);
     background-size: 300% 300%; 
-
+    /* opacity: 0;
+    transition: opacity 0.5s ease-in-out; */
 }
 
+body.fade-in {
+    opacity: 1;
+}
 /* Navigation Bar */
 .navbar {
     display: flex;
-    font-family: sans-serif;
-    justify-content: flex-start; /* Align items to the start */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    justify-content: center; /* Center elements */
     align-items: center;
-    padding: 1rem 1rem;
-    background-color: #333; 
+    padding: 1rem;
+    background-color: black; 
     color: white;
+    gap: 2rem; /* Add spacing between items */
 }
 
 /* Logo */
 .logo img {
-    height: 30px; /* Adjust height as needed */
+    height: 40px; /* Adjust height as needed */
 }
 
 /* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 4rem; /* Space between links */
-    margin: 0 auto; /* Center the links */
+    gap: 5rem; /* Space between links */
     padding: 0;
+}
+
+/* Ensure nav items are aligned */
+.nav-links li {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links li a {
@@ -41,7 +52,7 @@ body, html{
 }
 
 .nav-links li a:hover {
-    color: #2575fc; /*Change color on hover*/
+    color: #2575fc;
 }
 
 /* Sticky Navbar */
@@ -52,7 +63,6 @@ body, html{
     z-index: 1000;
     background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
 }
-
 /*Landing Page style */
 
 .hero {
@@ -61,18 +71,20 @@ body, html{
     align-items: center;
     justify-content: space-between;
     padding: 1px 10%;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .hero-content {
-    max-width: 60%;
+    max-width: 55%;
 }
 
 .hero-content h4 {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #d1d1d1;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .hero-title {
@@ -98,13 +110,15 @@ body, html{
 
 .hero-content p {
     margin-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #ccc;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
 }
 
 .btn {
     display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 20px;
     padding: 12px 25px;
     background: #A6FF00;
@@ -192,14 +206,253 @@ body, html{
     .hero-content h1 {
         font-size: 2rem;
     }
-
     .hero-content p {
         font-size: 0.9rem;
     }
-
     .btn {
         font-size: 0.9rem;
         padding: 8px 15px;
     }
 }
 
+/* Gradient Background for Modal */
+#quoteModal .modal-content {
+    background: linear-gradient(135deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+    color: white;  /* Text color */
+    border-radius: 10px;  /* Optional: to give rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styling for Modal Header */
+#quoteModal .modal-header {
+    border-bottom: none; /* Removes the default border */
+    color: white;
+}
+
+#quoteModal .modal-body {
+    background-color: transparent; 
+}
+
+/* Custom Submit Button Style */
+#quoteModal .btn-primary {
+    background: #8cd400;  
+    border-color: #A6FF00; 
+}
+
+#quoteModal .btn-primary:hover {
+    background: #8cd400;  /* Darker shade for hover effect */
+    border-color: #8cd400;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and switch */
+}
+
+/* Adjust the size of the switch */
+.dark-mode-toggle .container {
+    width: 45px; /* Slightly smaller */
+    height: 25px;
+}
+
+.dark-mode-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navbar Dark Mode */
+body.dark-mode .navbar {
+    background-color: rgb(247, 246, 246);
+}
+
+body.dark-mode .nav-links li a {
+    color: #080808;
+}
+
+/* Button Dark Mode */
+body.dark-mode .btn {
+    background: #34C759;
+    color: black;
+}
+
+body.dark-mode .btn:hover {
+    background: #2aa44f;
+}
+
+.ai-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+    background: white;
+    min-height: 100vh;
+}
+
+.ai-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem; /* Space between image and text */
+    max-width: 1200px;
+}
+
+.ai-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ai-content {
+    max-width: 50%;
+}
+
+.ai-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.ai-content p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .ai-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ai-content {
+        max-width: 100%;
+    }
+
+    .ai-image img {
+        max-width: 80%;
+    }
+}
+
+.services {
+    text-align: center;
+    padding: 120px 10%;
+    background: linear-gradient(135deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+    color: white;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.service-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.service-card a {
+    display: block;
+    margin-top: 10px;
+    color: #A6FF00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(166, 255, 0, 0.2);
+    top: -50px;
+    left: -50px;
+    border-radius: 50%;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover::before {
+    transform: scale(1.5);
+}
+
+
+
+body.projects-page {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.projects-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-card {
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    flex-shrink: 0; /* Ensures each card keeps its width */
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}

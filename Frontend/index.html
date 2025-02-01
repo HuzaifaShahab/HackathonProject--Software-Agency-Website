@@ -4,40 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ozova Labs</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="app.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="./assets/agencyLogo.png" alt="Ozova Labs">
+            <img src="./assets/logo.png" alt="Ozova Labs">
         </div>
         <ul class="nav-links">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#industries">Industries</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
+
+           <!-- Dark Mode Switch -->
+        <div class="dark-mode-toggle">
+            <img src="./assets/toggle.png" alt="Dark Mode Icon" class="dark-mode-icon">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label class="switch" for="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
     </nav>
+
     <section class="hero">
         <div class="hero-content">
-            <h4>INTRODUCING OZAVA LABS</h4>
+            <h4>INTRODUCING OZAVA LABS...</h4>
             <h1 class="hero-title">
                 <span id="typed-output"></span>
                 <span class="cursor"></span>
-            </h1>            <p class="animate__animated animate__fadeInLeft">We are committed to providing our clients with the highest quality services,
-                 and we are always looking for new ways to push the boundaries of what is
-                  possible.</p>
-            <a href="#" class="btn">Get In Touch</a>
+            </h1>            
+            <p class="animate__animated animate__fadeInLeft">
+                We are committed to providing our clients with the highest quality services, 
+                and we are always looking for new ways to push the boundaries of what is possible.
+            </p>
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#quoteModal">Get A Free Quote</a>
         </div>
         <div class="hero-image">
-            <img src = "./assets/wolf.jpeg" alt="Futuristic Wolf Image">
+            <img src="./assets/wolf.jpeg" alt="Futuristic Wolf Image">
         </div>
     </section>
+
+<!-- Bootstrap Modal with Centering -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="quoteModalLabel">Request a Quote</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="quoteForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Project Details</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="ai-section">
+    <div class="ai-container">
+        <div class="ai-image">
+            <img src="./assets/tech.jpg" alt="AI Business Success">
+        </div>
+        <div class="ai-content">
+            <h2>Drive Unstoppable Business Success Through AI!</h2>
+            <p>
+                Maximize your business potential with our exceptional AI Development Services. 
+                Our customer-centric and passionate team of engineers is committed to delivering 
+                tailored solutions that exceed your expectations.
+            </p>
+            <p>
+                We leverage our expertise in machine learning, deep learning, and AI development 
+                to deliver exceptional solutions in NLP, computer vision, predictive analytics, 
+                generative AI, AI chatbot development, and more.
+            </p>
+            <p>
+                Our AI-based solutions offer a clear pathway to success, helping businesses improve 
+                decision-making, automate operations, save time, and boost profits.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="app.js"></script>
 </body>
 </html>
