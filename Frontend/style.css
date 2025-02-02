@@ -344,6 +344,7 @@ body.dark-mode .btn:hover {
     color: white;
 }
 
+
 .services-container {
     display: flex;
     justify-content: center;
@@ -408,7 +409,10 @@ body.dark-mode .btn:hover {
     transform: scale(1.5);
 }
 
-
+.typed-title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+}
 
 body.projects-page {
     /* display: flex; */
@@ -420,15 +424,31 @@ body.projects-page {
 
 .projects-container {
     width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     overflow: hidden;
     position: relative;
+    margin-top: 0;
 }
 
 .carousel {
     display: flex;
     gap: 25px;
     transition: transform 0.5s ease-in-out;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
 }
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
 
 .project-card {
     width: 300px;
@@ -455,4 +475,37 @@ body.projects-page {
 .card-content {
     padding: 15px;
     text-align: center;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.stat-card {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffcc00, #ff5500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    color: #d1d1d1;
 }

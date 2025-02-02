@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css"> <!-- Shared CSS -->
+    <link rel="stylesheet" href="contacts.css"> <!-- Separate CSS for contacts -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Ozova Labs">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+
+        <!-- Dark Mode Switch -->
+        <div class="dark-mode-toggle">
+            <img src="./assets/toggle.png" alt="Dark Mode Icon" class="dark-mode-icon">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label class="switch" for="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2 class="contact-heading">Contact Us</h2>
+        <p class="contact-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos eaque 
+            doloremque, nulla mollitia facilis.
+        </p>
+
+        <div class="contact-container">
+            
+            <!-- Left Side: Contact Info -->
+            <div class="contact-info">
+                <div class="info-box">
+                    <span class="icon"><!-- Add home icon here --></span>
+                    <div>
+                        <h3>Address</h3>
+                        <p>4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <span class="icon"><!-- Add phone icon here --></span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>561-456-2321</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <span class="icon"><!-- Add email icon here --></span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>example@email.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form">
+                <h3>Send Message</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Type your Message..." required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="#" target="_blank" class="social-icon" id="github"><!-- Add GitHub icon here --></a>
+            <a href="#" target="_blank" class="social-icon" id="linkedin"><!-- Add LinkedIn icon here --></a>
+            <a href="#" target="_blank" class="social-icon" id="instagram"><!-- Add Instagram icon here --></a>
+        </div>
+
+    </section>
+
+</body>
+</html>

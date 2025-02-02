@@ -77,3 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(moveCarousel, 2000); // Move every 2 seconds
 });
 
+
+
+
