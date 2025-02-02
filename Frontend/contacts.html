@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us</title>
+
+    <!-- Link to the shared CSS stylesheet for styling common elements -->
     <link rel="stylesheet" href="style.css"> <!-- Shared CSS -->
+
+    <!-- Link to the separate CSS stylesheet for the contact page's unique styling -->
     <link rel="stylesheet" href="contacts.css"> <!-- Separate CSS for contacts -->
 </head>
+
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with links to other pages -->
     <nav class="navbar">
         <div class="logo">
+            <!-- Logo image -->
             <img src="./assets/logo.png" alt="Ozova Labs">
         </div>
         <ul class="nav-links">
+            <!-- Navigation links to various pages -->
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contacts.html">Contact</a></li>
         </ul>
 
-        <!-- Dark Mode Switch -->
+        <!-- Dark Mode Switch (for toggling light/dark mode) -->
         <div class="dark-mode-toggle">
             <img src="./assets/toggle.png" alt="Dark Mode Icon" class="dark-mode-icon">
             <input type="checkbox" class="checkbox" id="checkbox">
@@ -43,51 +52,63 @@
             
             <!-- Left Side: Contact Info -->
             <div class="contact-info">
+                <!-- Info Box for Address -->
                 <div class="info-box">
-                    <span class="icon"><!-- Add home icon here --></span>
+                    <span class="icon icon-home"><!-- Add home icon here --></span>
                     <div>
-                        <h3>Address</h3>
+                        <h3 class="address-text">Address</h3>
                         <p>4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
                     </div>
                 </div>
 
+                <!-- Info Box for Phone -->
                 <div class="info-box">
-                    <span class="icon"><!-- Add phone icon here --></span>
+                    <span class="icon icon-phone"></span>
                     <div>
-                        <h3>Phone</h3>
-                        <p>561-456-2321</p>
+                        <h3 class="phone-text">Phone</h3>
+                        <p>0370-0305195</p>
                     </div>
                 </div>
 
+                <!-- Info Box for Email -->
                 <div class="info-box">
-                    <span class="icon"><!-- Add email icon here --></span>
+                    <span class="icon icon-email"></span>
                     <div>
-                        <h3>Email</h3>
-                        <p>example@email.com</p>
+                        <h3 class="email-text">Email</h3>
+                        <p>swehuzaifa.dev@email.com</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Side: Contact Form -->
+            <!-- Right Side: Contact Form for users to send a message -->
             <div class="contact-form">
                 <h3>Send Message</h3>
                 <form action="#" method="POST">
                     <input type="text" name="name" placeholder="Full Name" required>
+
+                    <!-- Input field for email -->
                     <input type="email" name="email" placeholder="Email" required>
+
                     <textarea name="message" placeholder="Type your Message..." required></textarea>
+
+                    <!-- Submit button for the form -->
                     <button type="submit">Send</button>
                 </form>
             </div>
         </div>
 
-        <!-- Social Media Links -->
+        <!-- Social Media Links to connect via platforms -->
         <div class="social-links">
-            <a href="#" target="_blank" class="social-icon" id="github"><!-- Add GitHub icon here --></a>
-            <a href="#" target="_blank" class="social-icon" id="linkedin"><!-- Add LinkedIn icon here --></a>
-            <a href="#" target="_blank" class="social-icon" id="instagram"><!-- Add Instagram icon here --></a>
+            <a href="https://github.com/HuzaifaShahab" target="_blank" class="social-icon" id="github"><!-- Add GitHub icon here --></a>
+            
+            <a href="https://www.linkedin.com/in/huzaifashahab/" target="_blank" class="social-icon" id="linkedin"><!-- Add LinkedIn icon here --></a>
+            
+            <a href="https://www.instagram.com/i.huzaifa.shahab/" target="_blank" class="social-icon" id="instagram"><!-- Add Instagram icon here --></a>
         </div>
 
     </section>
 
+    <script src="app.js"></script>
 </body>
+
 </html>

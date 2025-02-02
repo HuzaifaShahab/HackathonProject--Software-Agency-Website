@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ozova Labs</title>
     
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">
             <img src="./assets/logo.png" alt="Ozova Labs">
@@ -24,7 +24,7 @@
             <li><a href="contacts.html">Contact</a></li>
         </ul>
 
-           <!-- Dark Mode Switch -->
+        <!-- Dark Mode Switch -->
         <div class="dark-mode-toggle">
             <img src="./assets/toggle.png" alt="Dark Mode Icon" class="dark-mode-icon">
             <input type="checkbox" class="checkbox" id="checkbox">
@@ -34,9 +34,10 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h4>INTRODUCING OZAVA LABS...</h4>
+            <h4>INTRODUCING OZOVA LABS...</h4>
             <h1 class="hero-title">
                 <span id="typed-output"></span>
                 <span class="cursor"></span>
@@ -52,63 +53,68 @@
         </div>
     </section>
 
-<!-- Bootstrap Modal with Centering -->
-<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="quoteModalLabel">Request a Quote</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="quoteForm">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Project Details</label>
-                        <textarea class="form-control" id="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Submit</button>
-                </form>
+    <!-- Quote Modal -->
+    <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quoteModalLabel">Request a Quote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="quoteForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<section class="ai-section">
-    <div class="ai-container">
-        <div class="ai-image">
-            <img src="./assets/tech.jpg" alt="AI Business Success">
+    <!-- AI Services Section -->
+    <section class="ai-section">
+        <div class="ai-container">
+            <div class="ai-image">
+                <img src="./assets/tech.jpg" alt="AI Business Success">
+            </div>
+            <div class="ai-content">
+                <h2>Drive Unstoppable Business Success Through AI!</h2>
+                <p>
+                    Maximize your business potential with our exceptional AI Development Services. 
+                    Our customer-centric and passionate team of engineers is committed to delivering 
+                    tailored solutions that exceed your expectations.
+                </p>
+                <p>
+                    We leverage our expertise in machine learning, deep learning, and AI development 
+                    to deliver exceptional solutions in NLP, computer vision, predictive analytics, 
+                    generative AI, AI chatbot development, and more.
+                </p>
+                <p>
+                    Our AI-based solutions offer a clear pathway to success, helping businesses improve 
+                    decision-making, automate operations, save time, and boost profits.
+                </p>
+            </div>
         </div>
-        <div class="ai-content">
-            <h2>Drive Unstoppable Business Success Through AI!</h2>
-            <p>
-                Maximize your business potential with our exceptional AI Development Services. 
-                Our customer-centric and passionate team of engineers is committed to delivering 
-                tailored solutions that exceed your expectations.
-            </p>
-            <p>
-                We leverage our expertise in machine learning, deep learning, and AI development 
-                to deliver exceptional solutions in NLP, computer vision, predictive analytics, 
-                generative AI, AI chatbot development, and more.
-            </p>
-            <p>
-                Our AI-based solutions offer a clear pathway to success, helping businesses improve 
-                decision-making, automate operations, save time, and boost profits.
-            </p>
-        </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <p>(C) 2024 Ozova Labs. Made with <span class="heart">❤️</span> by Huzaifa!</p>
+    </footer>
 
-     <!-- Bootstrap JS -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="app.js"></script>
+    <!-- Bootstrap and Custom Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

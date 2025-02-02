@@ -1,6 +1,6 @@
 /* Background Gradient */
 body {
-    background: linear-gradient(to right, #141e30, #243b55);
+    background: linear-gradient(to right, #536976, #292e49);
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,12 +16,16 @@ body {
 /* Heading */
 .contact-heading {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(45deg, #ffcc00, #ff5500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    margin-bottom: 10px;
 }
 
 /* Subtext */
 .contact-text {
     font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     max-width: 600px;
     margin: 0 auto 30px;
     line-height: 1.5;
@@ -39,6 +43,7 @@ body {
 /* Contact Info Styling */
 .contact-info {
     background: rgba(255, 255, 255, 0.1);
+    
     padding: 40px;
     border-radius: 15px;
     width: 350px;
@@ -56,21 +61,27 @@ body {
 
 /* Icons */
 .icon {
+    display: inline-block;
     width: 40px;
     height: 40px;
-    display: inline-block;
     background-size: cover;
+    background-position: center;
 }
 
-/* Placeholder for icons (Replace with your own images) */
+.address-text, .phone-text, .email-text {
+    background: linear-gradient(45deg, #ffcc00, #ff5500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .icon-home {
-    background-image: url('./assets/home-icon.png');
+    background-image: url('./assets/address.png');
 }
 .icon-phone {
-    background-image: url('./assets/phone-icon.png');
+    background-image: url('./assets/phone.png');
 }
 .icon-email {
-    background-image: url('./assets/email-icon.png');
+    background-image: url('./assets/gmail.png');
 }
 
 /* Contact Form */
@@ -132,17 +143,82 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Replace with actual social media icons */
 #github {
-    background-image: url('./assets/tech.jpg');
+    background-image: url('./assets/github.png');
 }
 #linkedin {
-    background-image: url('./assets/wolf.jpeg');
+    background-image: url('./assets/linkedin.png');
 }
 #instagram {
-    background-image: url('./assets/wolff.jpeg');
+    background-image: url('./assets/instagram.png');
 }
 
 .social-icon:hover {
     transform: scale(1.1);
+}
+
+
+@media (max-width: 1024px) { /* Tablets */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 5% 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile Phones */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .hero-image img {
+        max-width: 80%; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
 }
